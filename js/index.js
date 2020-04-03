@@ -5,7 +5,7 @@
 // 3- you can look for type 4 to found media query
 
 const $ = document;
-$.querySelector(`h1`).innerText = ` The rule on CSS file is: "` + $.styleSheets[0].cssRules[1].conditionText + `" and the type is: "` + $.styleSheets[0].cssRules[1].type + `"`
+$.querySelector(`h1`).innerText = ` The rule on CSS file is: "` + $.styleSheets[0].cssRules[2].conditionText + `" and the type is: "` + $.styleSheets[0].cssRules[2].type + `"`
 
 // -------------------------------------------------------------------------------
 
@@ -14,7 +14,6 @@ $.querySelector(`h1`).innerText = ` The rule on CSS file is: "` + $.styleSheets[
 // window.matchMedia("your rule").matches return if the rule matches
 
 window.addEventListener('resize', () => {
-    console.log("click")
     if (window.matchMedia("(max-width: 60rem)").matches) {
         $.querySelector('body').style.backgroundColor = "green";
         $.querySelector(`h2`).innerText = "Background color rule applied by JS"
