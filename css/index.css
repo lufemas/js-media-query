@@ -1,0 +1,14 @@
+
+body{
+    background-color: white;
+}
+h2 {
+    color: white;
+}
+
+@media screen and (max-width: 80rem) {
+    body{
+        background-color: red;
+    }
+    
+  }
